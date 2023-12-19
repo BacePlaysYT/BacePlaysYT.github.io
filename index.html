@@ -109,27 +109,7 @@
 		<p> Mail: loeweschaad@gmail.com </p>
 
 </section>
-<<<<<<< HEAD
-<p> 
-void showWorm(struct board* aboard, struct worm* aworm) {
-    int head = aworm->headindex;
-    int tail = (aworm->headindex + 1) % (aworm->cur_lastindex + 1);
-    int i = aworm->headindex;
-    do {
-        if (i == head)
-            placeItem(aboard, aworm->wormpos[i].y, aworm->wormpos[i].x,
-                      BC_USED_BY_WORM, SYMBOL_WORM_HEAD_ELEMENT, aworm->wcolor);
-        else if (i == tail)
-            placeItem(aboard, aworm->wormpos[i].y, aworm->wormpos[i].x,
-                      BC_USED_BY_WORM, SYMBOL_WORM_TAIL_ELEMENT, aworm->wcolor);
-        else
-            placeItem(aboard, aworm->wormpos[i].y, aworm->wormpos[i].x,
-                      BC_USED_BY_WORM, SYMBOL_WORM_INNER_ELEMENT, aworm->wcolor);
+</body>
 
-        i = (i + aworm->cur_lastindex) % (aworm->cur_lastindex + 1);
-    } while (i != aworm->headindex && aworm->wormpos[i].y != UNUSED_POS_ELEM);
-} </p>
-</body>
-=======
-</body>
->>>>>>> aab89af10138df486089157a629568334ce64c1d
+
+
